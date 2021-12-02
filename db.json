@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "The Best of Eastern Europe",
+      "days":10,
+      "sale":2200,
+      "city":"Warsaw",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
+      "imageUrl": "https://cdn.tourradar.com/s3/tour/1500x800/5586_f7d745.jpg",
+      "price": 1500
+    },
+    {
+      "id": 2,
+      "name": "Italy from North to South",
+      "days":15,
+      "sale":2560,
+      "city":"Rome",
+      "description": "be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, ",
+      "imageUrl": "https://cdn.tourradar.com/s3/tour/1500x800/86742_e822ae.jpg",
+      "price": 2200
+    },
+    {
+      "id": 3,
+      "name": "Prague & Kutna Hora",
+      "days":8,
+      "sale":1440,
+      "city":"Prague",
+      "description": "roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney ",
+      "imageUrl": "https://cdn.tourradar.com/s3/tour/1500x800/103656_6fd7f32c.jpg",
+      "price": 800
+    },
+    {
+      "id": 4,
+      "name": "Berlin to Munich",
+      "days":12,
+      "sale":2100,
+      "city":"Berlin",
+      "description": "ctures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic",
+      "imageUrl": "https://cdn.tourradar.com/s3/tour/1500x800/88241_0d03e54e.jpg",
+      "price": 1890
+    },
+    {
+      "id": 5,
+      "name": "Egypt Nile Jewel ",
+      "days":8,
+      "sale":2200,
+      "city":"Cairo",
+      "description": "ctures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic",
+      "imageUrl": "https://cdn.tourradar.com/s3/tour/1500x800/14262_60ebdc0c1e574.jpg",
+      "price": 1900
+    },
+    {
+      "id": 6,
+      "name": "German Metropolis Deluxe",
+      "days":16,
+      "sale":3000,
+      "city":"Munich",
+      "description": "ctures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic",
+      "imageUrl": "https://cdn.tourradar.com/s3/tour/1500x800/215585_606d49caa9df1.jpg",
+      "price": 2600
+    },
+    {
+      "id": 6,
+      "name": "From London to Paris",
+      "days":15,
+      "sale":2350,
+      "city":"London",
+      "description": "ctures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic",
+      "imageUrl": "https://cdn.tourradar.com/s3/tour/1500x800/84945_13342ec7.jpg",
+      "price": 2000
+    }
+  ],
+  
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

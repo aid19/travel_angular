@@ -1,0 +1,125 @@
+<div class="subheader normal-bg section-padding">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12 abs">
+                <h1 class="text-white">Contact Us</h1>
+                <ul class="custom-flex justify-content-center">
+                    <li class="fw-500 text-white"><a href="" routerLink="">Home</a></li>
+                    <li class="active fw-500">Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="section-padding bg-light-white">
+    <div class="container bx-wrapper">
+        <div class="row">
+            <div class="divider-border">
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387132.7903183428!2d-74.02778197933625!3d40.70756043546227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2z0K3QvNC_0LDQudGALdGB0YLQtdC50YIt0LHQuNC70LTQuNC90LM!5e0!3m2!1sru!2s!4v1637842873824!5m2!1sru!2s" width="100%" height="300px" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box-style">
+                    <h4>Contact Info</h4>
+                    <p>11 Fifth Ave - New York, US
+                    <br />
+                    + 61 (2) 8093 3400
+                    <br />
+                    <a href="#">info@domain.com</a>
+                    </p>
+                    <hr class="styled"/>
+                    <h4>Departmens</h4>
+                    <ul class="depart-info">
+                        <li>Administration
+                            <br />
+                            <a href="">0038 23932342</a>
+                            <br/>
+                            <a href="">admin@admin.com</a>
+                            <br />
+                            <small>Monday to Friday 9am - 7pm</small>
+                        </li>
+                        <br />
+                        <li>General questions
+                            <br />
+                            <a href="">0038 23932342</a>
+                            <br/>
+                            <a href="">questions@admin.com</a>
+                            <br />
+                            <small>Monday to Friday 9am - 7pm</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Mussum ipsum cacilds, vidis litro abertis.</p>
+                    <div class="message-contact">
+                        <form class="card" action="" [formGroup]="form" (ngSubmit)="submit()">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="">First name</label>
+                                        <input type="text" formControlName="firstName" class="form-control form-control-custom" id="name_contact" name="name_contact" placeholder="name...">
+                                        <div *ngIf="form.get('firstName').invalid && form.get('firstName').touched" class="validation">
+                                            <small *ngIf="form.get('firstName').errors.required ">*Name is required</small>
+                                            <small *ngIf="form.get('firstName').errors.pattern">*Only alphabetsallowed</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="">Surname</label>
+                                        <input type="text" formControlName="lastName" class="form-control form-control-custom" id="name_contact" name="name_contact" placeholder="surname...">
+                                        <div *ngIf="form.get('lastName').invalid && form.get('lastName').touched" class="validation">
+                                            <small *ngIf="form.get('lastName').errors.required ">*Surname is required</small>
+                                            <small *ngIf="form.get('lastName').errors.pattern">*Only alphabetsallowed</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" >Email:</label>
+                                        <input type="text" class="form-control form-control-custom" id="name_contact" formControlName="email" name="name_contact" placeholder="email...">
+                                        <div *ngIf="form.get('email').invalid && form.get('email').touched" class="validation">
+                                            <small *ngIf="form.get('email').errors.required ">*Email is required</small>
+                                            <small *ngIf="form.get('email').errors.email ">*Email must be a valid email address</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="">Phone number:</label>
+                                        <input  type="text" formControlName="phone" class="form-control form-control-custom" id="name_contact" name="name_contact" placeholder="phone number...">
+                                        <div *ngIf="form.get('phone').invalid && form.get('phone').touched" class="validation">
+                                            <small *ngIf="form.get('phone').errors.required ">*Mobile is required</small>
+                                            <small *ngIf="form.get('phone').errors.pattern">*Mobile number should be only numbers</small>
+                                            <small *ngIf="form.get('phone').errors.minlength">*Mobile must be at least 10 numbers</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="">Your message:</label>
+                                        <textarea name="" formControlName="mes" id=""  rows="5"  style="height: 100px;" class="form-control form-control-custom"></textarea>
+                                        <div *ngIf="form.get('mes').invalid && form.get('mes').touched" class="validation">
+                                            <small *ngIf="form.get('mes').errors.required ">*Enter your message</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-first btn-submit" disabled  [disabled]="form.invalid">Submit</button>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>

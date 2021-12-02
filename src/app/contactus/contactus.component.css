@@ -1,0 +1,97 @@
+.bg-light-white {
+    background-color: #f5f5f5;
+}
+
+.bx-wrapper {
+    box-shadow: 0 0 8px #0000001a;
+    padding: 40px;
+    background: #ffff;
+}
+.box-style {
+    padding: 30px 30px 20px 30px;
+    margin: 30px 0;
+    background-color: #f9f9f9;
+    box-shadow: rgb(17 17 26 / 10%) 0 0 16px;
+} 
+.box-style p {
+    font-size: 15px !important;
+}
+.box-style p a {
+    color: #01b7f2;
+    font-size: 15px !important;
+
+}
+.styled {
+    margin: 20px -25px  ;
+    border: 0;
+    border-top: 2px  #ddd;
+}
+
+.depart-info {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+.depart-info li{
+    font-size: 15px !important;
+
+}
+.depart-info li a{
+    color: #01b7f2;
+    font-size: 15px !important;
+
+}
+.contact-info{
+    padding: 20px;
+    margin: 30px 0;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+.form-control {
+    color: #333;
+    height: 38px;
+    border-radius: 2px;
+    line-height: 1.5 !important;
+}
+.form-control-custom {
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 0;
+    border: 2px solid #efefef;
+    width: 100%;
+    background: #f5f5f5;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+textarea.form-control {
+    height: auto;
+    padding: 20px 15px 0;
+}
+
+form button {
+    width: 160px;
+    text-align: center;
+}
+
+.card {
+    border: 0 !important;
+}
+.ng-invalid.ng-touched {
+    border: 1px solid red ;
+
+}
+.ng-valid.ng-touched {
+    border: 1px solid rgb(47, 206, 47);
+}
+form small {
+    color: red;
+    font-size: 13px;
+}
+.form-group label{
+    font-weight: 400 !important;
+}
+    
+

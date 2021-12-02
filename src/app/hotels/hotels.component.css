@@ -1,0 +1,8 @@
+.bg-light-white {
+    background-color: #f5f5f5;
+}
+section {
+    background: url(../../assets/img/home1.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}

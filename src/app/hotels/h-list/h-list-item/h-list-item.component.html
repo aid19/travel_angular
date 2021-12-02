@@ -1,0 +1,65 @@
+<!-- Modal -->
+<div id="myModal" class="modal" [ngClass]="{'show':showModal}">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{productItem.name}} ({{productItem.city}})</h4>
+            <button type="button" class="close" (click)="showModal=false" data-dismiss="modal" style="border: none; background: #000; color: #ffff;">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img class="bd-placeholder-img card-img-top" width="100%" [src]="productItem.imageUrl" />
+        <div class="desc">
+          <h4 style="margin: 10px 0;">Description</h4>
+          <p style="font-size: 17px !important;">Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. 
+              Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. 
+              An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.
+          </p>
+          <div class="program">
+            <div class="row">
+              <div class="col-sm-6">
+                <ul>
+                  <li><i class="fas fa-route"></i>Dolorem mediocritatem</li>
+                  <li><i class="fas fa-luggage-cart"></i>Mea appareat</li>
+                  <li><i class="fas fa-bus"></i>Prima causae</li>
+                  <li><i class="fas fa-globe-americas"></i>Singulis indoctum</li>
+                </ul>
+
+              </div>
+              <div class="col-sm-6">
+                <ul>
+                  <li><i class="fas fa-map-marker-alt"></i>Timeam inimicus</li>
+                  <li><i class="fas fa-umbrella-beach"></i>Oportere democritum</li>
+                  <li><i class="fas fa-archway"></i>Cetero inermis</li>
+                  <li><i class="fas fa-tram"></i>Pertinacia eum</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" (click)="showModal=false" class="btn btn-default" data-dismiss="modal" style="background:#000; color: #ffff;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal End -->
+
+
+     
+<div class="card mb-4 shadow-sm " data-price="">
+  <div class="slidee">
+    <img class="bd-placeholder-img card-img-top" width="100%"  [src]="productItem.imageUrl" />
+    <div class="info-slide">
+      <h4>{{productItem.name}}</h4>
+      <p>{{productItem.city}}</p>
+      <small class="info-head">{{productItem.days}} days</small>
+      <span class="price">
+        <small class="sale">${{productItem.sale}}</small>{{ productItem.price | currency:'USD'}}
+      </span>
+      <div class="info-action">
+        <a class="btn-first btn-submit2" style="float: right; margin-bottom: 20px;" (click)="showModal=true">View</a> 
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,40 @@
+#city {
+    margin-bottom: 20px;
+    background:#01b6f21e;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+#city label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    margin: 5px;
+}
+#city input {
+    width: 250px;
+    border: #6990bd ;
+}
+#city button {
+    margin: 10px 2px;
+    
+}
+.form-control-custom{    
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 0;
+    border: 2px solid #efefef;
+    width: 100%;
+    margin-right:10px ;
+    background: #ffff;
+    font-size: 14px;
+    border-radius: 50px;
+}
+#city button{
+    padding: 5px 20px;
+}
+
+@media (max-width: 576px) {
+    #city input {
+        width: 100%;
+    }    
+}

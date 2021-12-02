@@ -1,0 +1,12 @@
+.bg-light-white {
+    background-color: #f5f5f5;
+}
+.bg-custom-white {
+    background-color: #fff;
+}
+.padding-20 {
+    padding: 20px;
+}
+.bx-wrapper {
+    box-shadow: 0 0 8px #0000001a;
+}

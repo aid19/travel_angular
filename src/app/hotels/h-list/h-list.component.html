@@ -1,0 +1,11 @@
+<div id="city">
+    <label for="">Search City:</label><br />
+    <input type="text" [(ngModel)] = 'City' class="form-control-custom ng-pristine ng-invalid" placeholder="Search"/>
+    <button type="button" (click)="onCityFilter()" class="btn-first btn-submit">Search</button>
+    <button type="button" (click)="onCityFilterClear()" class="btn-first btn-submit2">Clear</button> 
+</div>
+<div class="row">
+    <div *ngFor="let product of productList|filter:SearchCity:'city'" class="col-md-4" >
+        <app-h-list-item [productItem]="product" ></app-h-list-item>
+    </div>
+</div>
